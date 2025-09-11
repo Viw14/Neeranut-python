@@ -9,7 +9,7 @@ Create a class hierarchy:
 
 class Vehicle:
 
-    def __init__(self, brand, model, year):
+    def __init__(self, brand, model, year): #contructor method ของแม่
         self.brand = brand
         self.model = model
         self.year = year
@@ -17,7 +17,7 @@ class Vehicle:
     def get_info(self):
         return f"Brand: {self.brand}, Model: {self.model}, Year: {self.year}"
 
-class car(Vehicle):
+class car(Vehicle): #คลาส Car รับถ่ายทอดจากคลาส Vehicle
 
     def __init__(self, brand, model, year, number_of_doors):
         super().__init__(brand, model, year)
